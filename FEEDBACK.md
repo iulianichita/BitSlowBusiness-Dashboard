@@ -28,4 +28,4 @@ The functionality works as expected; however, after generating a new coin, it wi
 **Loading Transactions**: If you encounter the message "No transactions found" upon first loading the page, simply refresh the page once more to ensure all data is properly fetched.
 
 **HTTP requests**: To test and verify the HTTP requests made to the server, I used the **REST Client extension** available in Visual Studio Code. This tool was extremely helpful during development, especially for debugging and validating endpoints.
-If you wish to explore the application's behavior or test it yourself, you can find a collection of pre-written requests in the [Open file request.rest](./src/request.rest). You can also add and run your own requests directly from this file using the extension.
+If you wish to explore the application's behavior or test it yourself, you can find a collection of pre-written requests in the [Open file request.rest](./tests/request.rest). You can also add and run your own requests directly from this file using the extension.
