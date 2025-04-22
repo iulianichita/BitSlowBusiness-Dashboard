@@ -1,33 +1,5 @@
-# ThemeIsle Internship Test
-
-Welcome! This test consists of a series of practical tasks designed to evaluate your skills and familiarity with web applications.
-
-## Evaluation Criteria
-
-The following criteria will be assessed:
-
-- **Code Abstraction** – The quality of function and variable names, modularity, and overall code organization.
-- **Database Management** – Efficiency in handling queries, caching, and data operations.
-- **User Interface (UI) & User Experience (UX)** – Ease of interaction, readability, and overall intuitiveness of the interface.
-- **Performance** – Speed and efficiency in loading and processing data.
-
-## Implementation Guidelines
-
-- Feel free to install any libraries that you find useful to solve the tasks.
-- You are encouraged to use **AI tools** to assist in solving the task. However, you should be able to justify your choices and fully understand the decisions made in the application.
-- When trying to find optimizations, start with simple things like caching, proper indexing of database queries, and minimizing unnecessary API calls. For intensive compute operations leverage the asynchronous features of JavaScript - if you want something like a job queue you do not need to install a separate service for it.
-- This project is built using **Bun** for ease of use and quick setup. (We recommend using the structure of the Single Page Application (SPA))
-- For UI design, you are free to choose any style that best suits this type of application. Our main focus is on the solutions you implement to enhance user interaction and experience. **Animations are great, but use them in moderation**.
-- The **database schema** can be modified as needed (and some task might need it). If you make any changes that is non-obvious, please attach a **comment explaining the reason** for the modification (e.g., improving ease of use, performance optimization, caching efficiency, etc.). Make sure that the function `seedDatabase` is up to date with your new schema.
-- You can use other SQL databases to connect. Database creation and schema definitions must be still done by code by changing the function `seedDatabase`.
-- When implementing new **API endpoints**, ensure **robust error handling** that properly communicates with the UI.
-- When designing the UI, **make it responsive**. Consider the experience of users on **mobile devices and tablets**.
-- Test with different scenarios using the `seedDatabase` function. Check if you can handle `1000` transactions. **By default the SQLite database is created in memory, you might need to change it if your machine can not handle it**.
-- Use the analysis provided by the `bun run lint` to improve your codebase with best practices.
 
 ### Resources
-
-You can consult those resources to help you solve the tasks:
 
 - https://bun.sh/docs/api/http
 - https://bun.sh/docs/api/sqlite
@@ -37,23 +9,6 @@ You can consult those resources to help you solve the tasks:
 - https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design
 - https://www.restapi.guru/optimizing-rest-api-performance
 
-## Submitting the solution
-
-You can share your experience in the [Feedback](./FEEDBACK.md) file. Examples:
-
-- What was the most challenging part?
-- Which aspects of the application did you enjoy implementing?
-- Any suggestions for improvement?
-
-Please add screenshots of the application to the `screenshots` folder. You can also add videos.
-
-Make sure your code is **formatted** using `bun run format` (more about it down below).
-
-We recommend posting your solution on a Git platform (GitHub preferred) and sending us the repository link. If you want to add videos but the platform doesn't allow them due to size limits, you can use any video platform and include the links in the `FEEDBACK.md` file.
-
-The screenshots should show the completion of all the task related to UI. Videos or GIFs should show the user experience and the performance (e.g.: page loading).
-
-Good luck! 🚀
 
 ## Story (Introduction)
 
