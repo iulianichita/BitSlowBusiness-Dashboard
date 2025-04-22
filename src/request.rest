@@ -1,0 +1,85 @@
+GET http://localhost:3000/api/transactions
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/clients
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/coins
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/signup
+Content-Type: application/json
+
+{
+    "name": "iulianichita",
+    "email": "nichitaiulia@gmail.com",
+    "password": "password",
+    "phoneNumber": "07123456789", 
+    "address": "str nr sector"
+}
+
+###
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+###
+GET http://localhost:3000/api/protected
+Authentificate: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImV4cCI6MTc0NTMwNTk2MH0.C_Zx8Ez5zo0VJZyI_5N7IJpGxJfk9t507XWRCiktSJ8
+
+{
+    "message": "loginSuccess",
+    "id": 1,
+    "name": "admin",
+    "email": "admin@gmail.com"  
+}
+
+###
+GET http://localhost:3000/api/refresh 
+Authentificate: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImV4cCI6MTc0NTMwNjgxNn0.sAlVChm6kElViGlInOLnV50RNRFYN2Olr3SmqXSr3FY
+
+###
+GET http://localhost:3000/api/buyerssellers
+Content-Type: application/json 
+
+###
+POST http://localhost:3000/api/filtered
+Content-Type: application/json
+
+{
+    "startDate": "",
+    "finishDate": "2024-11-09T04:22:28.056Z",
+    "minBitSlowValue": "33000",
+    "maxBitSlowValue": "",
+    "buyerName": "Hugo Morar",
+    "sellerName": ""
+}
+
+###
+POST http://localhost:3000/api/buy/1
+Content-Type: "application/json",
+Authentificate: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IlJveGFubmVfUmF5bm9yNDZAZ21haWwuY29tIiwiZXhwIjoxNzQ1MjU3NTEyfQ.UwsgVpKXCle5SvD8abQ4SIZ1YgVWZbCfe9Uexd9_nKA
+
+###
+GET http://localhost:3000/api/findbits
+Content-Type: "application/json"
+
+###
+POST http://localhost:3000/api/generate
+Content-Type: "application/json"
+Authentificate: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNzQ1MjYxODc2fQ.Lyl0lb9jyjDjmJ_Et7YjpvEeaGqypXmXge13AnaIAJI
+Bit1: 3
+Bit2: 4
+Bit3: 6 
+Amount: 100
+
+###
+GET http://localhost:3000/api/history/39
+Content-Type: "application/json"
